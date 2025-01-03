@@ -21,7 +21,7 @@ jobs:
           echo '#!/bin/bash' > random_commit.sh
           echo 'RANDOM_NUM=$((0 + RANDOM % 3))' >> random_commit.sh
           echo 'for i in $(seq 1 $RANDOM_NUM); do' >> random_commit.sh
-          echo '  git commit --allow-empty -m "IKUN IKUN IKUN"' >> random_commit.sh
+          echo '  git commit --allow-empty -m "IKUN IKUN"' >> random_commit.sh
           echo 'done' >> random_commit.sh
           chmod +x random_commit.sh
 
