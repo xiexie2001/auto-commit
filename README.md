@@ -14,4 +14,26 @@
 
 > [!CAUTION] 
 >提交者的**邮箱**和**账号**必须配置成自己的，不然无法成功统计commit，别到时候给别人提交commit了
+>邮箱地址可以填你**github绑定的邮箱地址**，也可以填你的**私密邮箱**
 
+## 如何设置**私密邮箱**
+
+要隐藏你的电子邮件，可以通过 GitHub 的用户名设置一个 `noreply` 邮箱地址，这样就可以保护你的真实电子邮件地址。GitHub 提供了一个类似 `username@users.noreply.github.com` 的邮箱，你可以在 GitHub 的邮箱设置中找到并使用这个邮箱。
+
+具体的步骤如下：
+
+1. **在 GitHub 设置邮箱**：
+   - 登录到 GitHub。
+   - 进入 [GitHub Settings](https://github.com/settings/emails)。
+   - 在 "Primary email address" 下，启用 "Keep my email address private"（保持我的电子邮件地址私密）。
+   - 选择一个类似 `username@users.noreply.github.com` 的邮件地址。
+
+2. **修改 Git 配置**：
+   更新你的 Git 配置文件，使用 GitHub 提供的 `noreply` 邮箱地址。你可以在 `workflow` 中的 `git config` 步骤中修改为这个 `noreply` 邮箱：
+
+```yaml
+git config --local user.email "your-username@users.noreply.github.com"
+git config --local user.name "ikunycj"
+```
+
+这样，每次提交时，GitHub 会使用 `noreply` 邮箱来代替你个人的邮箱地址，保证隐私。
