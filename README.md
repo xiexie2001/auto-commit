@@ -1,6 +1,6 @@
 # github自动提交
 
-## 利用github工作流，实现自动提交github项目，帮你点亮你的github
+## 利用github工作流，实现自动提交github项目，帮你点亮你的github一片绿
 - 每天定时自动运行，按照设置的时间（如每天凌晨 0:00）执行。
 - 根据随机概率控制提交（0-6 的概率），如果需要提交，则随机生成 1-3 个空提交（empty commit），并将其推送到 GitHub 仓库。
 - 通过定时提交保持仓库的活跃度，让贡献图（GitHub Contributions Graph）不断更新。
