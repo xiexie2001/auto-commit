@@ -30,7 +30,7 @@ jobs:
 
       - name: Auto commit with random number
         run: |
-          git config --local user.email "1105925907@qq.com" 
+          git config --local user.email "73782799+xiexie2001@users.noreply.github.com" 
           git config --local user.name "xiexie2001"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
